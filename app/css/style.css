@@ -12,6 +12,28 @@ html {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
+  font-family: "DM Serif Display", serif;
+}
+
+p, button {
+  font-family: "Karla", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  padding: 1em 2.192em;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  border: 1.5px white solid;
+}
+
+button:hover {
+  background: white;
+  color: #2b272f;
 }
 
 body {
@@ -39,5 +61,31 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero__text {
+  padding: 5.8125rem 1.5rem;
+  background: url(/images/bg-pattern-intro-left-mobile.svg) no-repeat top left, url(/images/bg-pattern-intro-right-mobile.svg) bottom -12.3125rem right no-repeat;
+  background-color: #2d2640;
+}
+
+.hero__text h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.67px;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.hero__text p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-bottom: 2rem;
+  color: #fafafa;
 }
 /*# sourceMappingURL=style.css.map */

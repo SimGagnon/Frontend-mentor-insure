@@ -12,6 +12,28 @@ html {
 
 h1,h2,h3,h4,h5 {
     margin: 0;
+    font-family: $DmDisplay;
+}
+
+p,button {
+    font-family: $Karla;
+}
+
+button {
+    cursor: pointer;
+    padding: 1em 2.192em;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 1.5px white solid;
+
+    &:hover {
+        background: white;
+        color: $VeryDarkViolet;
+    }
 }
 
 body {
