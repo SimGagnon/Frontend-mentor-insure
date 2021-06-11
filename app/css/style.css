@@ -13,6 +13,7 @@ html {
 h1, h2, h3, h4, h5 {
   margin: 0;
   font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 
 p, button {
@@ -65,6 +66,11 @@ img {
 
 .hero {
   text-align: center;
+  padding-bottom: 8.75rem;
+}
+
+.hero__image img {
+  width: 100%;
 }
 
 .hero__text {
@@ -79,7 +85,6 @@ img {
   margin-bottom: 1rem;
   letter-spacing: -0.67px;
   line-height: 3rem;
-  font-weight: 400;
 }
 
 .hero__text p {
@@ -87,5 +92,37 @@ img {
   line-height: 1.625rem;
   margin-bottom: 2rem;
   color: #fafafa;
+}
+
+.about {
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  letter-spacing: -0.67px;
+  line-height: 3rem;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+.about__item img {
+  display: inline;
+  margin-bottom: 2rem;
+}
+
+.about__item h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.39px;
+}
+
+.about__item p {
+  color: #837d87;
+  line-height: 1.625rem;
 }
 /*# sourceMappingURL=style.css.map */
