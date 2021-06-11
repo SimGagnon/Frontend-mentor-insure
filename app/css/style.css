@@ -41,6 +41,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  text-align: center;
 }
 
 a {
@@ -95,7 +96,7 @@ img {
 }
 
 .about {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 8.75rem 1.5rem;
   text-align: center;
 }
 
@@ -124,5 +125,19 @@ img {
 .about__item p {
   color: #837d87;
   line-height: 1.625rem;
+}
+
+.more {
+  padding: 4.5rem 1.5rem;
+  background: url(/images/bg-pattern-how-we-work-mobile.svg) no-repeat top right;
+  background-color: #2d2640;
+  color: white;
+}
+
+.more h2 {
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  letter-spacing: -0.56px;
+  line-height: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
