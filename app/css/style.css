@@ -10,13 +10,13 @@ html {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   margin: 0;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
 
-p, button {
+p, button, li, h5 {
   font-family: "Karla", sans-serif;
 }
 
@@ -147,5 +147,40 @@ img {
 
 .footer {
   text-transform: uppercase;
+  padding: 0rem 1.4375rem 5.5rem 1.5625rem;
+}
+
+.footer__header {
+  background: url(/images/bg-pattern-footer-mobile.svg) no-repeat;
+  padding: 5.5rem 1.4375rem 2.5rem 1.5625rem;
+}
+
+.footer__header img {
+  display: inline-block;
+}
+
+.footer__header__socials {
+  margin-top: 2rem;
+}
+
+.footer__header__socials a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__list h5 {
+  margin: 2.5rem 0rem 2.25rem 0rem;
+  font-size: 0.8125rem;
+  color: #837d87;
+  letter-spacing: 1.5px;
+}
+
+.footer__list ul li {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  color: #2b272f;
+}
+
+.footer__list ul li:not(:last-child) {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

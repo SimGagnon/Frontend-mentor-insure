@@ -1,4 +1,48 @@
 .footer {
     text-transform: uppercase;
+    padding: 0rem 1.4375rem 5.5rem 1.5625rem;
+
+    &__header {
+        background: url(/images/bg-pattern-footer-mobile.svg) no-repeat;
+        padding: 5.5rem 1.4375rem 2.5rem 1.5625rem;
+        
+        img {
+            display: inline-block;
+        }
+
+        &__socials {
+            margin-top: 2rem;
+
+            a { 
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    &__list {
+
+        h5 {
+            margin: 2.5rem 0rem 2.25rem 0rem;
+            font-size: 0.8125rem;
+            color: $DarkGrayishViolet;
+            letter-spacing: 1.5px;
+        }
+
+        ul {
+
+            li {
+                font-weight: bold;
+                font-size: 0.8125rem;
+                color: $VeryDarkViolet;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
 
 }
