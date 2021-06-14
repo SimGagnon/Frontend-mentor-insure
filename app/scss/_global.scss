@@ -42,6 +42,11 @@ body {
     padding: 0;
     font-size: 16px;
     text-align: center;
+
+    &.noscroll {
+        position: fixed; 
+        overflow-y: scroll;
+    }
 }
 
 a {

@@ -13,6 +13,9 @@
         background: url(/images/bg-pattern-intro-left-mobile.svg) no-repeat top left,
                     url(/images/bg-pattern-intro-right-mobile.svg) bottom -12.3125rem right no-repeat;
         background-color: $DarkViolet;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h1 {
             color: white;
@@ -27,6 +30,7 @@
             line-height: 1.625rem;
             margin-bottom: 2rem;
             color: $VeryLightGray;
+            max-width: 33.75rem;
         }
     }
 }

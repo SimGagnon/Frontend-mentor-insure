@@ -3,4 +3,118 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 69.375rem;
+    margin: auto;
+
+
+    // Black overlay on mobile when burger is clicked //
+    &__links {
+        padding: 2.5rem 1.5rem;
+        background: url(/images/bg-pattern-mobile-nav.svg) bottom no-repeat;
+        background-size: contain;
+        background-color: $VeryDarkViolet;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 7;
+        min-height: 100vh;
+        width: 100%;
+        margin-top: 9vh;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        transition: 0.5s;
+        opacity: 0;
+
+        button {
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 1.5rem;
+            letter-spacing: 1.36px;
+            font-size: 1.25rem;
+        }
+
+        &.show {
+            opacity: 1;
+        }
+    }
+
+    // &__links {
+    //     display: none;
+    //     font-size: 0.8125rem;
+    //     letter-spacing: 1.5px;
+    //     font-weight: bold;
+    //     color: $DarkGrayishViolet;
+    //     text-transform: uppercase;
+
+    //     button {
+    //         color: $VeryDarkViolet;
+    //         border: 1.5px $VeryDarkViolet solid;
+
+    //         &:hover {
+    //             color: white;
+    //             background: $VeryDarkViolet;
+    //         }
+    //     }
+
+    //     li {
+    //         margin-right: 1.5625rem;
+
+    //         &:hover {
+    //             color: $VeryDarkViolet;
+    //         }
+    //     }
+    // }
+
+    &__hamburger {
+
+        border: 2px $VeryDarkViolet solid;
+        padding: 10px 8px;
+
+
+        &.open {
+            span:first-child {
+                transform: translate(2px, 3.3px) rotate(45deg);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:last-child {
+                transform: translate(2.3px, 0.5px) rotate(-45deg);
+            }
+        }
+
+        span {
+            display: block;
+            width: 16px;
+            height: 1.5px;
+            background-color: black;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 3.5px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:50em) {
+
+    .header {
+
+        &__hamburger {
+            display: none;
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+        }
+    }
 }
