@@ -24,7 +24,7 @@
         text-transform: uppercase;
         font-size: 1.6em;
         transition: 0.5s;
-        opacity: 0;
+        display: none;
 
         button {
             width: 100%;
@@ -37,36 +37,9 @@
         }
 
         &.show {
-            opacity: 1;
+            display: block;
         }
     }
-
-    // &__links {
-    //     display: none;
-    //     font-size: 0.8125rem;
-    //     letter-spacing: 1.5px;
-    //     font-weight: bold;
-    //     color: $DarkGrayishViolet;
-    //     text-transform: uppercase;
-
-    //     button {
-    //         color: $VeryDarkViolet;
-    //         border: 1.5px $VeryDarkViolet solid;
-
-    //         &:hover {
-    //             color: white;
-    //             background: $VeryDarkViolet;
-    //         }
-    //     }
-
-    //     li {
-    //         margin-right: 1.5625rem;
-
-    //         &:hover {
-    //             color: $VeryDarkViolet;
-    //         }
-    //     }
-    // }
 
     &__hamburger {
 
@@ -114,7 +87,36 @@
 
         &__links {
             display: flex;
-            align-items: center;
+            align-items: center;  
+            position: static;
+            min-height: 100%;
+            margin: 0;
+            background: none;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            color: $DarkGrayishViolet;
+            text-transform: uppercase;
+            padding: 0;
+
+            button {
+                color: $VeryDarkViolet;
+                border: 1.5px $VeryDarkViolet solid;
+
+                &:hover {
+                    color: white;
+                    background: $VeryDarkViolet;
+                }
+            }
+
+            li {
+                margin-right: 1.5625rem;
+                margin-bottom: 0;
+                font-size: 0.8125rem;
+
+                &:hover {
+                    color: $VeryDarkViolet;
+                }
+            }
         }
     }
 }
