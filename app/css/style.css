@@ -240,8 +240,15 @@ img {
 }
 
 .about {
-  padding: 0 1.5rem 8.75rem 1.5rem;
+  padding: 8.75rem 1.5rem 8.75rem 1.5rem;
   text-align: center;
+}
+
+.about hr {
+  width: 9.375rem;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  border-color: #C396C6;
 }
 
 .about h2 {
@@ -372,6 +379,11 @@ img {
   .footer__container {
     max-width: 68.75rem;
     margin: auto;
+  }
+  .footer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .footer__list {
     display: grid;
