@@ -15,3 +15,28 @@
         line-height: 2.5rem;
     }
 }
+
+@media screen and (min-width:50em) {
+    .more {
+
+        &__container {
+            background: url(/images/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
+            background-color: $DarkViolet;
+            max-width: 69.375rem;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            padding: 4.3125rem 5.0625rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            letter-spacing: -0.78px;
+            margin: 0;
+            line-height: 3.5rem;
+        }
+
+    }
+}
